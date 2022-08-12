@@ -1,8 +1,14 @@
 {
-  "name": "ping",
-  "version": "1.9.0",
-  "author": "612901",
-  "customConfig": [    {
+  "name": "Art",
+  "version": "1.1.2",
+  "author": "Bllk",
+  "repository": "https://github.com/guugg",
+  "utils": [{
+      "now": "1577006772710", 
+      "moment": "Function "
+  }],
+  "customConfig": [
+    {
       "name": "github",
       "label": "Github用户名",
       "group": "个人中心",
@@ -283,22 +289,176 @@
       "label": "分类缩略图",
       "group": "外观样式",
       "value": "/media/images/tag.png",
-      "type": "input"    
+      "type": "input"
+    },
+
+   
+
+
+
+
+
+
+
+
+
+
+
+  {"name":"artmusic","label":"音乐插件","group":"音乐","value":"off","type":"select","options":[{"label":"开","value":"on"},{"label":"关","value":"off"}]},{"name":"artmusicpt","label":"歌曲平台","group":"音乐","value":"netease","type":"radio","options":[{"label":"网易云","value":"netease"},{"label":"腾讯QQ","value":"tencent"},{"label":"酷狗","value":"kugou"},{"label":"百度","value":"Baidu"},{"label":"虾米","value":"xiami"}],"note":"根据你歌曲的平台选择!"},{"name":"artmusictype","label":"音乐类型(歌单 /歌曲 /专辑 /歌手 /搜索关键字)","group":"音乐","value":"playlist","type":"radio","options":[{"label":"歌单","value":"playlist"},{"label":"歌曲","value":"song"},{"label":"专辑","value":"album"},{"label":"艺人","value":"artist"},{"label":"搜索关键字","value":"search"}],"note":"注意类型要与ID匹配,除了关键字搜索时中文;其他的一律按数字串 /比如歌单:'5034516746'!"},{"name":"artmusicid","label":"类型ID (比如类型为搜索关键字:'分手')","group":"音乐","value":"5034516746","type":"input","note":"注意类型要与ID匹配,除了关键字搜索时中文;其他的一律按数字串 /比如歌单:'5034516746'!"},{"name":"artmusicautoplay","label":"自动播放","group":"音乐","value":"true","type":"radio","options":[{"label":"自动 (好像有点不能自动)","value":"true"},{"label":"不自动","value":"false"}]},{"name":"artmusicorder","label":"随机播放","group":"音乐","value":"random","type":"radio","options":[{"label":"随机","value":"random"},{"label":"顺序","value":"list"}]},{"name":"artmusivolume","label":"默认音量","group":"音乐","value":"1","type":"input","note":"音量0.1到1 /1时最大值"},
+
+    
+{
+  "name": "valine",
+  "label": "评论插件",
+  "group": "评论",
+  "value": "on",
+  "type": "select",
+  "options": [
     {
-      "name": "indeximg",
-      "label": "首页图片",
-      "group": "首页",
-      "value": "/media/img/centerbg.jpg",
-      "type": "input",
-      "note": "请输入图片地址"
+      "label": "开",
+      "value": "on"
     },
     {
-    "name": "live2d",
-    "label": "是否开启看板娘",
-    "group": "布局",
-    "value": true,
-    "type": "switch",
-    "note": ""
-  },
-]                   
+      "label": "关",
+      "value": "off"
+    }
+  ]
+},
+{
+  "name": "valineid",
+  "label": "Valine的ID",
+  "group": "评论",
+  "value": "9ElN9sgweVSBS4Ie64HrTRIb-MdYXbMMI",
+  "type": "input"
+},
+{
+  "name": "valinekey",
+  "label": "Valine的KEY",
+  "group": "评论",
+  "value": "xgcNc4bzTc0zXH1XjbBfjzm9",
+  "type": "input"
+},
+{
+  "name": "valineder",
+  "label": "Valine默认语",
+  "group": "评论",
+  "value": "我每天都坚持冒泡😘",
+  "type": "input",
+  "note": ""
+},
+{
+  "name": "valinepage",
+  "label": "Valine每页限制多少条评论 (数字/false)",
+  "group": "评论",
+  "value": "false",
+  "type": "input",
+  "note": "根据需求,填false则显示全部"
+},
+
+
+
+
+{
+  "name": "friendsname",
+  "label": "友联页名称",
+  "group": "友链",
+  "value": "友情链接😘",
+  "type": "input",
+  "note": ""
+},
+    {
+      "name": "friends",
+      "label": "添加友链",
+      "group": "友链",
+      "type": "array",
+      "value": [{
+          "siteName": "Bllk",
+          "siteLink": "https://803344.xyz",
+          "siteLogo": "https://803344.xyz/media/images/avatarx.png",
+          "description": "简简单单的素朴，Art 作者"
+        }],
+      "arrayItems": [
+        {
+          "label": "名称",
+          "name": "siteName",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "链接",
+          "name": "siteLink",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "Logo",
+          "name": "siteLogo",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "描述",
+          "name": "description",
+          "type": "textarea",
+          "value": ""
+        }
+      ],
+      "note": ""
+    },
+
+
+
+{
+  "name": "artcdn",
+  "label": "是否全站开启CDN加速",
+  "group": "CDN加速",
+  "value": "off",
+  "type": "select",
+  "options": [
+    {
+      "label": "开",
+      "value": "on"
+    },
+    {
+      "label": "关",
+      "value": "off"
+    }
+  ],
+  "note": "全站= CSS+JS+文章图片等等"
+},
+{
+  "name": "yymmm",
+  "label": "你博客的域名",
+  "group": "CDN加速",
+  "value": "https://803344.xyz",
+  "type": "input",
+  "note": "填写你目前博客的域名带http://或https:// "
+},
+{
+  "name": "cdncdn",
+  "label": "加速域名",
+  "group": "CDN加速",
+  "value": "https://cdn.jsdelivr.net/gh/guugg/guugg.github.io@master/",
+  "type": "input",
+  "note": "如果是在github则直接使用jsdelivr，如其它则填其它的加速域名。 （欢迎提供免费加速..）"
+},
+
+
+{
+  "name": "footzb",
+  "label": "底部左下角",
+  "group": "底部版权",
+  "value": "",
+  "type": "textarea",
+  "note": "底部左下角的内容，可以添加一些版权链接等等"
+},
+  {
+    "name": "customCss",
+    "label": "自定义CSS ( 还不支持哦 )",
+    "group": "自定义样式",
+    "value": "",
+    "type": "textarea",
+    "note": "自定义标签背景色格式 a.ctag-le-gao{background-color: #e54d42 !important}"
+  }
+  ]
 }
