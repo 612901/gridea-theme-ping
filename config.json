@@ -1,8 +1,8 @@
 {
-  "name": "Art",
+  "name": "ping",
   "version": "1.1.2",
-  "author": "Bllk",
-  "repository": "https://github.com/guugg",
+  "author": "612901",
+  "repository": "https://github.com/612901",
   "utils": [{
       "now": "1577006772710", 
       "moment": "Function "
@@ -12,7 +12,7 @@
       "name": "github",
       "label": "Github用户名",
       "group": "个人中心",
-      "value": "guugg",
+      "value": "612901",
       "type": "input",
       "note": ""
     },
@@ -28,7 +28,7 @@
       "name": "myname",
       "label": "我的名称",
       "group": "个人中心",
-      "value": "Art",
+      "value": "612901",
       "type": "input",
       "note": ""
     },
