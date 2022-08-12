@@ -1,6 +1,304 @@
 {
-  "name": "Starter",
-  "version": "0.1.0",
-  "author": "EryouHao",
-  "customConfig": []
+  "name": "ping",
+  "version": "1.9.0",
+  "author": "612901",
+  "customConfig": [    {
+      "name": "github",
+      "label": "Github用户名",
+      "group": "个人中心",
+      "value": "guugg",
+      "type": "input",
+      "note": ""
+    },
+    {
+      "name": "Profilepicture",
+      "label": "个人头像",
+      "group": "个人中心",
+      "value": "/media/images/avatarx.png",
+      "type": "input",
+      "note": ""
+    },
+    {
+      "name": "myname",
+      "label": "我的名称",
+      "group": "个人中心",
+      "value": "Art",
+      "type": "input",
+      "note": ""
+    },
+    {
+      "name": "personalalbum",
+      "label": "头像背景图",
+      "group": "个人中心",
+      "value": "/media/images/sidebar.png",
+      "type": "input",
+      "note": ""
+    },
+    {
+      "name": "artadvanced",
+      "label": "首页公告",
+      "group": "个人中心",
+      "type": "array",
+      "value": [
+        {
+          "name": "Bllk博客,Art主题详情信息!",
+          "link": "//803344.xyz"
+        },
+        {
+          "name": "了解我的Github仓库放了什么东西!",
+          "link": "https://github.com/guugg"
+        }
+      ],
+      "arrayItems": [
+        {
+          "label": "公告标题",
+          "name": "name",
+          "type": "input",
+          "value": "微博"
+        },
+        {
+          "label": "公告链接",
+          "name": "link",
+          "type": "input",
+          "value": "http://803344.xyz/"
+        }
+      ]
+    },
+    {
+      "name": "mysocial",
+      "label": "我的社交",
+      "group": "个人中心",
+      "type": "array",
+      "value": [
+        {
+          "name": "QQ：1570875683",
+          "link": "//wpa.qq.com/msgrd?v=3&uin=1570875683&site=qq&menu=yes",
+          "icon": "fa-qq"
+        },
+        {
+          "name": "Github：guugg",
+          "link": "https://github.com/guugg",
+          "icon": "fa-github-alt"
+        }
+      ],
+      "arrayItems": [
+        {
+          "label": "名称",
+          "name": "name",
+          "type": "input",
+          "value": "微博"
+        },
+        {
+          "label": "链接",
+          "name": "link",
+          "type": "input",
+          "value": "http://localhost/"
+        },
+        {
+          "label": "图标",
+          "name": "icon",
+          "type": "input",
+          "value": "fa-weibo"
+        }
+      ],
+      "note": "个人介绍下方，图标详情 "
+    },
+
+
+    {
+      "name": "listform",
+      "label": "文章列表形式",
+      "group": "外观布局",
+      "value": "home",
+      "type": "radio",
+      "options": [
+        {
+          "label": "列表式（左图）",
+          "value": "home"
+        },
+        {
+          "label": "卡片式",
+          "value": "grid"
+        }
+      ],
+      "note": "使用卡片式 ; 每页文章数最好设置成双数."
+    },
+
+    {
+      "name": "listformd",
+      "label": "列表多排（适配差,使用可以关闭导航、侧边栏）",
+      "group": "外观布局",
+      "value": "no",
+      "type": "radio",
+      "options": [
+        {
+          "label": "关闭",
+          "value": "no"
+        },
+        {
+          "label": "双排列表式",
+          "value": "homeer"
+        }
+      ],
+      "note": "适配不是很好，或者开启全部只需要关闭侧边栏."
+    },
+
+    {
+      "name": "containerfluid",
+      "label": "是否全屏",
+      "group": "外观布局",
+      "value": false,
+      "type": "switch",
+      "note": "根据个人爱好设置"
+    },
+    {
+      "name": "sidoff",
+      "label": "首页侧边栏",
+      "group": "外观布局",
+      "value": "col-md-8",
+      "type": "radio",
+      "options": [
+        {
+          "label": "开启",
+          "value": "col-md-8"
+        },
+        {
+          "label": "关闭",
+          "value": "col-md-12"
+        }
+      ],
+      "note": "使用卡片式 ; 每页文章数最好设置成双数."
+    },
+    {
+      "name": "navoff",
+      "label": "侧边导航",
+      "group": "外观布局",
+      "value": "",
+      "type": "radio",
+      "options": [
+        {
+          "label": "开启",
+          "value": ""
+        },
+        {
+          "label": "关闭",
+          "value": "navbar-collapsed"
+        }
+      ],
+      "note": "如果关闭，建议开启顶部导航."
+    },
+  {
+    "name": "topnav",
+    "label": "顶部导航",
+    "group": "外观布局",
+    "type": "array",
+    "value": [],
+    "arrayItems": [
+      {
+        "label": "名称",
+        "name": "name",
+        "type": "input",
+        "value": ""
+      },
+      {
+        "label": "链接",
+        "name": "link",
+        "type": "input",
+        "value": ""
+      }
+    ],
+    "note": "个人介绍下方，图标详情 "
+  },
+
+
+
+
+
+
+
+    {
+      "name": "glass",
+      "label": "是否开启玻璃效果(透明)",
+      "group": "外观样式",
+      "value": false,
+      "type": "switch",
+      "note": "注：开启后会增加浏览器内存消耗"
+    },
+    {
+      "name": "jpgbeijtu",
+      "label": "是否使用图片背景",
+      "group": "外观样式",
+      "value": false,
+      "type": "switch",
+      "note": "注：开启后会增加浏览器内存消耗"
+    },
+    {
+      "name": "layoutys",
+      "label": "基础外观",
+      "group": "外观样式",
+      "value": "white",
+      "type": "radio",
+      "options": [
+        {
+          "label": "纯白",
+          "value": "white"
+        },
+        {
+          "label": "导航黑",
+          "value": "black"
+        },
+        {
+          "label": "全黑",
+          "value": "fullblack"
+        }
+      ],
+      "note": "包含标题及日期、分类等信息部分"
+    },
+    {
+      "name": "contentBgColor",
+      "label": "内容区背景色",
+      "group": "外观样式",
+      "value": "linear-gradient(to right,#d1eaa3 0,#dbc6eb 100%)",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)） 试试渐变颜色:  linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)"
+    },
+    {
+      "name": "pageBgColor",
+      "label": "网页背景图",
+      "group": "外观样式",
+      "value": "/media/images/background.jpg",
+      "type": "input",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "featureImage",
+      "label": "文章默认缩略图",
+      "group": "外观样式",
+      "value": "/media/images/thumb.png",
+      "type": "input"
+    },
+    {
+      "name": "tagImage",
+      "label": "分类缩略图",
+      "group": "外观样式",
+      "value": "/media/images/tag.png",
+      "type": "input"    
+    {
+      "name": "indeximg",
+      "label": "首页图片",
+      "group": "首页",
+      "value": "/media/img/centerbg.jpg",
+      "type": "input",
+      "note": "请输入图片地址"
+    },
+    {
+    "name": "live2d",
+    "label": "是否开启看板娘",
+    "group": "布局",
+    "value": true,
+    "type": "switch",
+    "note": ""
+  },
+]                   
 }
